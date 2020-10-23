@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/order")
 public class OrderController {
 
-	
+	  
 	//对订单进行增删改查
 	//@GetMapping("/add")  不符合restful风格的url设计  restfuk风格里面，不允许出现动词、只能出现名词
 	//幂等性  == 多次调用一个接口，并且传递的参数一样的情况下如果结果相同，说明该接口符合幂等性；

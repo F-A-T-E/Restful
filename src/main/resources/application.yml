@@ -4,6 +4,8 @@ spring:
     time-zone: GMT+8
     serialization:
       write-dates-as-timestamps: false
+ # profiles:
+  #  active: pro
 
 logging:
   file:
@@ -11,5 +13,3 @@ logging:
   level:
     ROOT: WARN
     com.java.spring_restful: WARN
-server:
-  port: 8080

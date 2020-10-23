@@ -1,10 +1,5 @@
 package com.java.spring_restful.controller;
-
-
 import com.java.spring_restful.DTO.TvseriesDto;
-
-
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -46,7 +41,7 @@ public class TvseriesController {
         list.add(createWestWorld());
         return list;
     }
-    
+
     @GetMapping("/{id}")
     public TvseriesDto getOne(@PathVariable int id) {
     	if(log.isTraceEnabled()) {
@@ -120,5 +115,4 @@ public class TvseriesController {
     	calendar.set(2016, Calendar.OCTOBER,2,0,0,0);
     	return new TvseriesDto(101,"West World",1,calendar.getTime());
     }
-    
 }
