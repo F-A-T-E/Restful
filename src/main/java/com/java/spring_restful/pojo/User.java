@@ -13,5 +13,8 @@ public class User {
     @ApiModelProperty("密码")
     public String password;
 
-
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 }
